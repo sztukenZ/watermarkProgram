@@ -1,17 +1,11 @@
-import tkinter as tk
+import eel
+from random import randint
+import jinja2 as jinja2
 
-root = tk.Tk(className='Watermark Image')
-root.geometry("800x600")
-root.configure(bg='white')
+eel.init("web")
 
-
-add_images = tk.Button(root, text='Add Images', width=25, command=root.destroy)
-add_images.grid()
-
-clear_images = tk.Button(root, text='Clear Images', width=25, command=root.destroy)
-clear_images.grid()
-
-next_step = tk.Button(root, text='Next Step', width=25, bg='green', fg='blue')
-next_step.grid()
-
-root.mainloop()
+# Start the index.html file
+eel.start(
+    'templates/index.html',
+    jinja_templates='templates'
+)
