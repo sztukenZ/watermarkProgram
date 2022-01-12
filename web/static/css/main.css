@@ -1,0 +1,11 @@
+.navigation {
+    padding: 1rem;
+}
+
+.picture_display {
+    padding: 20px 60px 60px;
+}
+
+.picture_display img {
+    border: 1px solid black;
+}
